@@ -415,6 +415,7 @@
       </div>
       <h2>Subscribe to get informed when i post a blog</h2>
       <div class="newsletter">
+        <form name="subscribe" method="POST" data-netlify="true"></form>
         <input type="email" id="border" class="input" placeholder="Enter you email" />
         <i class="fas sa-envelop"></i>
         <span class="subs">Subscribe</span>
@@ -431,21 +432,23 @@
         <h2>Contact Me</h2>
       </div>
       <div class="contact-form">
-        <form action="" method="post">
+        <form action="" method="post" name="contact" data-netlify="true">
           <input
             type="text"
+            name="name"
             class="form-control"
             required
             placeholder="your name"
           /><br />
           <input
             type="email"
+            name="email"
             class="form-control"
             required
             placeholder="your name"
           /><br />
           <textarea
-            name=""
+            name="message"
             id=""
             cols="50"
             rows="5"
