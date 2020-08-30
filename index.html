@@ -57,8 +57,9 @@
 
     <section id="about" >
       <div class="about">
-        <div class="">
+        <div class="shadow">
           <img src="./assets/img/me.jpg" alt="" class="img-me">
+
         </div>
         <div class="bio">
           <h2 class="bio-heading">About Me</h2>
@@ -84,7 +85,7 @@
         <h2>Services</h2>
       </div>
       <div class="container card-area">
-        <div class="card">
+        <div class="card col-md-4 col-sm-12">
           <i></i>
           <h3 class="card-header">Database Administration</h3>
           <p class="card-txt">
@@ -92,44 +93,78 @@
             databases
           </p>
         </div>
-        <div class="card">
+        <div class="card col-md-4 col-sm-12">
           <i></i>
           <h3 class="card-header">Web Development</h3>
           <p class="card-txt">
-            UI/UX design, server/client side scripting and responsiveness
+            Server/client side scripting and responsiveness with best practices.
           </p>
         </div>
-        <div class="card">
+        <div class="card col-md-4 col-sm-12">
           <i></i>
           <h3 class="card-header">Software Maintenance</h3>
-          <p class="card-txt">optimizing, organizing and distribution.</p>
+          <p class="card-txt">Optimizing, organizing and distribution.</p>
         </div>
-        <!-- <div class="card">
+        <div class="card col-md-4 col-sm-12">
           <i></i>
-          <h3 class="card-header">Database design</h3>
-          <p class="card-txt"></p>
-        </div> -->
+          <h3 class="card-header">Web design</h3>
+          <p class="card-txt">UI/UX design, site layout and UI translation</p>
+        </div>
       </div>
     </section>
     <section id="works" class="works">
-     <div class="container">
-      <div class="works-heading">
-        <h6>What I"ve done</h6>
-        <h2>Portfolio</h2>
-      </div>
-      <div class="works-section">
-        <div class="card-area">
-        <img src="./assets/img/work(1).png" alt="image of sky 360 properties">
-          <div class="card-txt work-description">
-            <p>
-              Search for a property of your choice and click to view the property.
-              Take a Walk-through our detailed 360 virtual tour... <span><a href="#" class="underline">see more</a></span>
-            </p>
-
+      <div class="container">
+        <div class="works-heading">
+          <h6>What I"ve done</h6>
+          <h2>Portfolio</h2>
+        </div>
+        <div class="works-section">
+          <div class="wev-container">
+            <!-- <div class="container mb-4"> -->
+              <div class="wev-card col-sm-12 col-md-6 p-3">
+                <div class="wev-card-img">
+                  <img
+                    src="./assets/img/work(1).png"
+                    alt="image of sky 360 properties"
+                  />
+                </div>
+                <div class="wev-card-content">
+                  <div class="wev-card-header"></div>
+                  <div class="wev-card-body pb-1">
+                    <p >
+                      Search for a property of your choice and click to view the
+                      property. Take a Walk-through our detailed 360 virtual tour...
+                      <span><a href="https://sky360properties.com" class="btn btn-sec">see more</a></span>
+                    </p>
+                  </div>
+                  <div class="wev-card-footer "></div>
+                </div>
+              </div>
+            <!-- </div> -->
+            <!-- <div class="container mb-4"> -->
+              <div class="wev-card col-sm-12 col-md-6">
+                <div class="wev-card-img">
+                  <img
+                    src="./assets/img/work(1).png"
+                    alt="image of sky 360 properties"
+                  />
+                </div>
+                <div class="wev-card-content">
+                  <div class="wev-card-header"></div>
+                  <div class="wev-card-body">
+                    <p>
+                      Search for a property of your choice and click to view the
+                      property. Take a Walk-through our detailed 360 virtual tour...
+                      <span><a href="https://sky360properties.com" class="wev-card-link btn btn-sec">see more</a></span>
+                    </p>
+                  </div>
+                  <div class="wev-card-footer"></div>
+                </div>
+              </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
-     </div>
     </section>
 
 <!--start testimonial section-->
@@ -237,23 +272,70 @@
 </section>
 <!--end testimonial section-->
 
-    <!-- <section id="blog" class="blog">
+    <section id="blog" class="blog">
+      
       <div class="works-heading">
         <h6>What I'm thinking'</h6>
         <h2>Blog</h2>
       </div>
-      <div class="form-group">
+      <div class="">
         <div class="form-control">
-
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form-control">
+          <label for="email">email</label>
+          <input type="email" name="email" id="email">
         </div>
       </div>
-    </section> -->
+    </section>
+
+
+    <!-- contact me -->
+    <section class="contactMe">
+      <!-- <img src="./assets/img/cont.jpg" alt=""> -->
+      <div class="form-group">
+        <div class="contact-title">
+          <h6>reach out to me</h6>
+          <h2>Contact Me</h2>
+        </div>
+        <div class="contact-form">
+          <form action="" method="post">
+            <input
+              type="text"
+              class="form-control"
+              required
+              placeholder="your name"
+            /><br />
+            <input
+              type="email"
+              class="form-control"
+              required
+              placeholder="your name"
+            /><br />
+            <textarea
+              name=""
+              id=""
+              cols="50"
+              rows="5"
+              class="form-control"
+              placeholder="enter text"
+              required
+            ></textarea
+            ><br />
+            <input type="submit" value="submit" class="submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact me ends -->
     <!--start footer top section-->
     <section class="footer-top-section pt-50 pb-30" id="contact">
       <div class="footer-top-wrap">
           <div class="container">
+            
               <div class="row">
-                  <div class="col-md-6 col-sm-6">
+                  <div class="col-md-6 col-sm-12">
                       <div class="single-footer-top">
                           <div class="footer-top-icon">
                               <i class="fa fa-map-marker"></i>
@@ -265,16 +347,18 @@
                       </div>
                   </div>
 
-                  <div class="col-md-6 col-sm-6">
-                      <div class="single-footer-top">
+                  <div class="col-md-6 col-sm-12">
+                      <a href="tel:+2348078372893">
+                        <div class="single-footer-top">
                           <div class="footer-top-icon">
                               <i class="fa fa-phone"></i>
                           </div>
                           <div class="footer-top-text">
                               <h5>Call Me</h5>
-                              <p>Office: +61 3 8376 6284 <br> Personal: +123 8376 6284</p>
+                              <p>+234 807 837 2893</p>
                           </div>
-                      </div>
+                        </div>
+                      </a>
                   </div>
 
               </div>
@@ -283,30 +367,30 @@
   </section>
 
   
-<!--start footer section-->
-<footer class="footer ptb-30">
-  <div class="footer-wrap">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="text-center">
-                      <div class="footer-social">
-                          <ul class="flex space-btw">
-                              <li><a href="https://wa.me/2348145230338"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
-                              <li><a href="https://github.com/sdumax"><i class="fa fa-github"></i> GitHub</a></li>
-                              <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
-                             
-                          </ul>
-                      </div>
-                      <div class="footer-copyright">
-                          <p>&copy; 2020 MTech Inc.</p>
+    <!--start footer section-->
+    <footer class="footer ptb-30">
+      <div class="footer-wrap">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="text-center">
+                          <div class="footer-social">
+                              <ul class="flex space-btw">
+                                  <li><a href="https://wa.me/2348145230338"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+                                  <li><a href="https://github.com/sdumax"><i class="fa fa-github"></i> GitHub</a></li>
+                                  <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+                                
+                              </ul>
+                          </div>
+                          <div class="footer-copyright">
+                              <p>&copy; 2020 MTech Inc.</p>
+                          </div>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-  </div>
-</footer>
+    </footer>
     <script src="./assets/js/nav.js"></script>
     
   <script src="./assets/js/scroll.js"></script>
