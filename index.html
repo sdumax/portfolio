@@ -15,384 +15,522 @@
     <title>Maxwell Diogu</title>
   </head>
   <body id="home">
-    <nav class="navbar" >
-      <a href="" class="nav-logo">MAXWELL</a>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#home">Home</a></li>
-        <li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item"><a href="#services">Services</a></li>
-        <li class="nav-item"><a href="#works">Portfolio</a></li>
-        <li class="nav-item"><a href="#blog">Blog</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
+
+    <!-- -start preloader -->
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+ <!-- end preloader -->
+<div class="hideit">
+  <nav class="navbar" >
+    <a href="" class="nav-logo">MAXWELL</a>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#home">Home</a></li>
+      <li class="nav-item"><a href="#about">About</a></li>
+      <li class="nav-item"><a href="#services">Services</a></li>
+      <li class="nav-item"><a href="#works">Portfolio</a></li>
+      <li class="nav-item"><a href="#blog">Blog</a></li>
+      <li class="nav-item"><a href="#contact">Contact</a></li>
+    </ul>
+    <span class="open-slide">
+      <a href="#" onclick="openMenu()" class="btn menu-btn">Menu</a>
+    </span>
+  </nav>
+  <header>
+    <div class="main">
+      <div class="main-content">
+        <h3 class="txt-shadow">Hello there!</h3>
+        <h1 class="txt-shadow">I am MAXWELL</h1>
+        <h3 class="txt-shadow">Junior Software Developer</h3>
+        <span class="flex centered space-btw">
+          <a href="" class="btn btn-sec">Hire Me</a>
+          <a href="#about" class="btn">About</a>
+        </span>
+      </div>
+    </div>
+
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeMenu()">&times;</a>
+      <ul class="">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#works">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <span class="open-slide">
-        <a href="#" onclick="openMenu()" class="btn menu-btn">Menu</a>
-      </span>
-    </nav>
-    <header>
-      <div class="main">
-        <div class="main-content">
-          <h3 class="txt-shadow">Hello there!</h3>
-          <h1 class="txt-shadow">I am MAXWELL</h1>
-          <h3 class="txt-shadow">Junior Software Developer</h3>
-          <span class="flex centered space-btw">
-            <a href="" class="btn btn-sec">Hire Me</a>
-            <a href="#about" class="btn">About</a>
-          </span>
-        </div>
-      </div>
+    </div>
+  </header>
 
-      <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeMenu()">&times;</a>
-        <ul class="">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#works">Portfolio</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+  <section id="about" class="aboutMe">
+    <!-- <div class="about">
+      <div class="">
+        <img src="./assets/img/me.jpg" alt="" class="img-me">
+      </div>
+      <div class="bio">
+        <h2 class="bio-heading">About Me</h2>
+        <p class="bio-txt">
+          I’m a web developer. I spend my whole day, practically every day,
+          experimenting with HTML, CSS, and JavaScript; dabbling with PHP and
+          frameworks like Laravel and Vue; and inhaling a wide variety of potentially useless information
+          through a few hundred RSS feeds. I build websites that delight and
+          inform. I do it well. I’m curious, and I enjoy work that challenges me
+          to learn something new and stretch in a different direction. I do my
+          best to stay on top of changes in the state of the art so that I can
+          meet challenges with tools well suited to the job at hand.
+        </p>
+      </div>
+    </div> -->
+    <div class="wev-tabs">
+      <input type="radio" id="r1" name="r" checked />
+      <input type="radio" id="r2" name="r" />
+      <input type="radio" id="r3" name="r" />
+      <input type="radio" id="r4" name="r" />
+      <input type="radio" id="r5" name="r" />
+      <nav>
+        <ul>
+          <li><label for="r1">Short Info</label></li>
+          <li><label for="r2">Stats</label></li>
+          <li><label for="r3">Skills</label></li>
+          <li><label for="r4">Experties</label></li>
         </ul>
-      </div>
-    </header>
+      </nav>
+      <div class="content">
+        <div class="wev-tab-article one">
+          <p>
+            I’m a developer. I spend my whole day, practically every day,
+          experimenting with HTML, CSS, and JavaScript; dabbling with PHP and
+          frameworks like Laravel and Vue; and inhaling a wide variety of potentially useful information
+          through a few hundred RSS feeds. I build websites that delight and
+          inform. I do it well. I’m curious, and I enjoy work that challenges me
+          to learn something new and stretch in a different direction. I do my
+          best to stay on top of changes in the state of the art so that I can
+          meet challenges with tools well suited to the job at hand.
+          </p>
+        </div>
+        <div class="wev-tab-article two">
+          <p>
+            - 
+          </p>
+        </div>
+        <div class="wev-tab-article three">
+        <div class="pill-wrap">
+          <div class="pill">Problem Solving</div>
+          <div class="pill">Critical Thinking</div>
+          <div class="pill">Teamwork</div>
+          <div class="pill">Public Speaking</div>
+          <div class="pill">Negotiation and Persuation</div>
+          <div class="pill">Hardware and Software Installations</div>
+          <div class="pill">JavaScript</div>
+          <div class="pill">Graphics Design</div>
+          <div class="pill">HTML/CSS</div>
+          <div class="pill">PHP</div>
+          <div class="pill">SQL</div>
+          <div class="pill">Database Design</div>
+        </div>
+        </div>
+        <div class="wev-tab-article four">
+          <p>
+            <div class="timeline">
 
-    <section id="about" >
-      <div class="about">
-        <div class="shadow">
-          <img src="./assets/img/me.jpg" alt="" class="img-me">
+              <div class="my-expertise">
+                  <div class="single-exp-group mb-5">
+                      <h5>Software Dev. &ndash; sky360properties</h5>
+                      <h6>Jul 2019 &ndash; Jun 2020</h6>
+                  </div>
+                  <p>Introduced methodologies and best practices to software development division to enhance product definition and application customization</p>I.</p>
+              </div>
 
-        </div>
-        <div class="bio">
-          <h2 class="bio-heading">About Me</h2>
-          <p class="bio-txt">
-            I’m a web developer. I spend my whole day, practically every day,
-            experimenting with HTML, CSS, and JavaScript; dabbling with PHP and
-            frameworks like Laravel and Vue; and inhaling a wide variety of potentially useless information
-            through a few hundred RSS feeds. I build websites that delight and
-            inform. I do it well. I’m curious, and I enjoy work that challenges me
-            to learn something new and stretch in a different direction. I do my
-            best to stay on top of changes in the state of the art so that I can
-            meet challenges with tools well suited to the job at hand.
-          </p>
-        </div>
-      </div>
-      
-    
-      </section>
-    </section>
-    <section id="services" class="services">
-      <div class="serve-heading">
-        <h6>What I do</h6>
-        <h2>Services</h2>
-      </div>
-      <div class="container card-area">
-        <div class="card col-md-4 col-sm-12">
-          <i></i>
-          <h3 class="card-header">Database Administration</h3>
-          <p class="card-txt">
-            Planning, allocation, modification control and monitoring of
-            databases
-          </p>
-        </div>
-        <div class="card col-md-4 col-sm-12">
-          <i></i>
-          <h3 class="card-header">Web Development</h3>
-          <p class="card-txt">
-            Server/client side scripting and responsiveness with best practices.
-          </p>
-        </div>
-        <div class="card col-md-4 col-sm-12">
-          <i></i>
-          <h3 class="card-header">Software Maintenance</h3>
-          <p class="card-txt">Optimizing, organizing and distribution.</p>
-        </div>
-        <div class="card col-md-4 col-sm-12">
-          <i></i>
-          <h3 class="card-header">Web design</h3>
-          <p class="card-txt">UI/UX design, site layout and UI translation</p>
-        </div>
-      </div>
-    </section>
-    <section id="works" class="works">
-      <div class="container">
-        <div class="works-heading">
-          <h6>What I"ve done</h6>
-          <h2>Portfolio</h2>
-        </div>
-        <div class="works-section">
-          <div class="wev-container">
-            <!-- <div class="container mb-4"> -->
-              <div class="wev-card col-sm-12 col-md-6 p-3">
-                <div class="wev-card-img">
-                  <img
-                    src="./assets/img/work(1).png"
-                    alt="image of sky 360 properties"
-                  />
-                </div>
-                <div class="wev-card-content">
-                  <div class="wev-card-header"></div>
-                  <div class="wev-card-body pb-1">
-                    <p >
-                      Search for a property of your choice and click to view the
-                      property. Take a Walk-through our detailed 360 virtual tour...
-                      <span><a href="https://sky360properties.com" class="btn btn-sec">see more</a></span>
-                    </p>
+              <div class="my-expertise">
+                  <div class="single-exp-group mb-5">
+                      <h5>Computer Operator &ndash; NewAge computer training </h5>
+                      <h6>Dec 2016 &ndash; Feb 2017</h6>
                   </div>
-                  <div class="wev-card-footer "></div>
-                </div>
+                  <p>Objectively productize plug-and-play infrastructures without performance based Company.</p>
               </div>
-            <!-- </div> -->
-            <!-- <div class="container mb-4"> -->
-              <div class="wev-card col-sm-12 col-md-6">
-                <div class="wev-card-img">
-                  <img
-                    src="./assets/img/work(1).png"
-                    alt="image of sky 360 properties"
-                  />
-                </div>
-                <div class="wev-card-content">
-                  <div class="wev-card-header"></div>
-                  <div class="wev-card-body">
-                    <p>
-                      Search for a property of your choice and click to view the
-                      property. Take a Walk-through our detailed 360 virtual tour...
-                      <span><a href="https://sky360properties.com" class="wev-card-link btn btn-sec">see more</a></span>
-                    </p>
-                  </div>
-                  <div class="wev-card-footer"></div>
-                </div>
-              </div>
-            <!-- </div> -->
+
           </div>
+          </p>
         </div>
       </div>
+    </div>
+  
     </section>
+  </section>
+  <section id="services" class="services">
+    <div class="serve-heading">
+      <h6>What I do</h6>
+      <h2>Services</h2>
+    </div>
+    <div class="container card-area">
+      <div class="card col-md-4 col-sm-12">
+        <i></i>
+        <h3 class="card-header">Database Administration</h3>
+        <p class="card-txt">
+          Planning, allocation, modification control and monitoring of
+          databases
+        </p>
+      </div>
+      <div class="card col-md-4 col-sm-12">
+        <i></i>
+        <h3 class="card-header">Web Development</h3>
+        <p class="card-txt">
+          Server/client side scripting and responsiveness with best practices.
+        </p>
+      </div>
+      <div class="card col-md-4 col-sm-12">
+        <i></i>
+        <h3 class="card-header">Software Maintenance</h3>
+        <p class="card-txt">Optimizing, organizing and distribution.</p>
+      </div>
+      <div class="card col-md-4 col-sm-12">
+        <i></i>
+        <h3 class="card-header">Web design</h3>
+        <p class="card-txt">UI/UX design, site layout and UI translation</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mason">
+    <h1>Responsive Masonry Grid</h1>
+<p>A pure CSS-only responsive masonry.</p>
+<div class="masonry">
+  <div class="item">
+    1
+    <img src="./assets/img/IMG-20200829-WA0001.jpg">
+  </div>
+  <div class="item">
+    2
+    <img src="./assets/img/IMG-20200829-WA0002.jpg">
+  </div>
+  <div class="item">
+    3
+    <img src="./assets/img/IMG-20200829-WA0004.jpg">
+  </div>
+  <div class="item">
+    4
+    <img src="./assets/img/IMG-20200829-WA0005.jpg">
+  </div>
+  <div class="item">
+    5
+    <img src="./assets/img/IMG-20200829-WA0006.jpg">
+  </div>
+  <div class="item">
+    6
+    <img src="./assets/img/IMG-20200829-WA0009.jpg">
+  </div>
+  <div class="item">
+    <!-- 7
+    <img src="./assets/img/IMG-20200829-WA00011.jpg">
+  </div>
+  <div class="item">
+    8
+    <img src="./assets/img/IMG-20200829-WA00012.jpg">
+  </div>
+  <div class="item">
+    9
+    <img src="./assets/img/IMG-20200829-WA00014.jpg">
+  </div>
+  <div class="item">
+    10
+    <img src="./assets/img/IMG-20200829-WA00015.jpg">
+  </div>
+  <div class="item">
+    11
+    <img src="./assets/img/IMG-20200829-WA00016.jpg">
+  </div>
+    <div class="item">
+    12
+    <img src="./assets/img/IMG-20200829-WA00017.jpg">
+  </div> -->
+</div>
+<h4>Photo from <a href="https://tiidelabfellowship.com" class="text-shadow">Tiidelab House</a>.</h4>
+  </section>
+
+  <section id="works" class="works">
+    <div class="container">
+      <div class="works-heading">
+        <h6>What I"ve done</h6>
+        <h2>Portfolio</h2>
+      </div>
+      <div class="works-section">
+        <div class="wev-container">
+          <!-- <div class="container mb-4"> -->
+            <div class="wev-card col-sm-12 col-md-6 p-3 mb-2">
+              <div class="wev-card-img">
+                <img
+                  src="./assets/img/work(1).png"
+                  alt="image of sky 360 properties"
+                />
+              </div>
+              <div class="wev-card-content mb-2">
+                <div class="wev-card-header"></div>
+                <div class="wev-card-body pb-1">
+                  <p >
+                    Search for a property of your choice and click to view the
+                    property. Take a Walk-through our detailed 360 virtual tour...
+                    <span><a href="https://sky360properties.com" class="btn btn-sec">see more</a></span>
+                  </p>
+                </div>
+                <div class="wev-card-footer "></div>
+              </div>
+            </div>
+          <!-- </div> -->
+          <!-- <div class="container mb-4"> -->
+            <div class="wev-card col-sm-12 col-md-6 mb-2">
+              <div class="wev-card-img">
+                <img
+                  src="./assets/img/work(1).png"
+                  alt="image of sky 360 properties"
+                />
+              </div>
+              <div class="wev-card-content">
+                <div class="wev-card-header"></div>
+                <div class="wev-card-body">
+                  <p>
+                    Search for a property of your choice and click to view the
+                    property. Take a Walk-through our detailed 360 virtual tour...
+                    <span><a href="https://sky360properties.com" class="wev-card-link btn btn-sec">see more</a></span>
+                  </p>
+                </div>
+                <div class="wev-card-footer"></div>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!--start testimonial section-->
 <section class="testimonial-section ptb-80 bg-secondary">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="headingOne text-center">
-                  <h6 class="sub">What my client say</h6>
-                  <h2>Testimonial</h2>
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-6 col-xs-12">
-              <div class="counter-area">
-                  <div class="col-sm-6 col-xs-6">
-                      <div class="text-center counter-info counter-box icolor-3">
-                          <i class="fa fa-cubes" aria-hidden="true"></i>
-                          <strong><span class="counter">4</span></strong>
-                          <span class="count-description">Completed Projects</span>
-                      </div>
-                  </div>
-                  <!-- <div class="col-sm-6 col-xs-6">
-                      <div class="text-center counter-info counter-box icolor-2">
-                          <i class="fa fa-trophy" aria-hidden="true"></i>
-                          <strong><span class="counter">405</span></strong>
-                          <span class="count-description">Award Received</span>
-                      </div>
-                  </div> -->
-                  <div class="col-sm-6 col-xs-6">
-                      <div class="text-center counter-info counter-box icolor-4">
-                          <i class="fa fa-smile-o" aria-hidden="true"></i>
-                          <strong><span class="counter">2</span></strong>
-                          <span class="count-description">Happy Clients</span>
-                      </div>
-                  </div>
-                  <!-- <div class="col-sm-6 col-xs-6">
-                      <div class="text-center counter-info counter-box icolor-1">
-                          <i class="fa fa-coffee" aria-hidden="true"></i>
-                          <strong><span class="counter">1205</span></strong>
-                          <span class="count-description">Coffee Consumed</span>
-                      </div>
-                  </div> -->
-              </div>
-          </div>
-          <div class="col-md-6 col-xs-12">
-              <div class="owl-carousel owl-theme client-testimonial white-indicator">
-                  <div class="item single-testimonial pt-50">
-                      <div class="testimonial-intro">
-                          <p>Thanks Maxwell for a superb website. Flexible, powerful and great
-                              looking. You opened my eyes even more to the endless posibilities of technology. It was nice working with you
-                              thank you once again. My business has moved to greater height all because of you. </p>
-                      </div>
-                      <div class="testimonial-client">
-                          <img src="./assets/img/testimony1.jpg" alt="team">
-                          <div class="testimonial-client-info">
-                              <h5>Dale Frank -
-                                  <small>CEO</small>
-                              </h5>
-                              <a href="#" class="text-shadow" target="_blank">Globacom</a>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- <div class="item single-testimonial pt-50">
-                      <div class="testimonial-intro">
-                          <p>Thanks HtmlLover for a superb template. Flexible, powerful and great
-                              looking. The
-                              support has been wonderful with same day answers to all the questions I
-                              had about
-                              customizing the template to fit by business.</p>
-                      </div>
-                      <div class="testimonial-client">
-                          <img src="img/t2.jpg" alt="team">
-                          <div class="testimonial-client-info">
-                              <h5>Penny Tool -
-                                  <small>Manager</small>
-                              </h5>
-                              <a href="#" target="_blank">ABC Company</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item single-testimonial pt-50">
-                      <div class="testimonial-intro">
-                          <p>Thanks HtmlLover for a superb template. Flexible, powerful and great
-                              looking. The
-                              support has been wonderful with same day answers to all the questions I
-                              had about
-                              customizing the template to fit by business.</p>
-                      </div>
-                      <div class="testimonial-client">
-                          <img src="img/t3.jpg" alt="team">
-                          <div class="testimonial-client-info">
-                              <h5>Britney Doe -
-                                  <small>Developer</small>
-                              </h5>
-                              <a href="#" target="_blank">Cloud IT</a>
-                          </div>
-                      </div>
-                  </div> -->
-              </div>
-          </div>
-      </div>
-  </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="headingOne text-center">
+                <h6 class="sub">What my client say</h6>
+                <h2>Testimonial</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <div class="counter-area">
+                <div class="col-sm-6 col-xs-6">
+                    <div class="text-center counter-info counter-box icolor-3">
+                        <i class="fa fa-cubes" aria-hidden="true"></i>
+                        <strong><span class="counter">4</span></strong>
+                        <span class="count-description">Completed Projects</span>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-6 col-xs-6">
+                    <div class="text-center counter-info counter-box icolor-2">
+                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                        <strong><span class="counter">405</span></strong>
+                        <span class="count-description">Award Received</span>
+                    </div>
+                </div> -->
+                <div class="col-sm-6 col-xs-6">
+                    <div class="text-center counter-info counter-box icolor-4">
+                        <i class="fa fa-smile-o" aria-hidden="true"></i>
+                        <strong><span class="counter">2</span></strong>
+                        <span class="count-description">Happy Clients</span>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-6 col-xs-6">
+                    <div class="text-center counter-info counter-box icolor-1">
+                        <i class="fa fa-coffee" aria-hidden="true"></i>
+                        <strong><span class="counter">1205</span></strong>
+                        <span class="count-description">Coffee Consumed</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <div class="owl-carousel owl-theme client-testimonial white-indicator">
+                <div class="item single-testimonial pt-50">
+                    <div class="testimonial-intro">
+                        <p>Thanks Maxwell for a superb website. Flexible, powerful and great
+                            looking. You opened my eyes even more to the endless posibilities of technology. It was nice working with you
+                            thank you once again. My business has moved to greater height all because of you. </p>
+                    </div>
+                    <div class="testimonial-client">
+                        <img src="./assets/img/testimony1.jpg" alt="team">
+                        <div class="testimonial-client-info">
+                            <h5>Dale Frank -
+                                <small>CEO</small>
+                            </h5>
+                            <a href="#" class="text-shadow" target="_blank">Globacom</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="item single-testimonial pt-50">
+                    <div class="testimonial-intro">
+                        <p>Thanks HtmlLover for a superb template. Flexible, powerful and great
+                            looking. The
+                            support has been wonderful with same day answers to all the questions I
+                            had about
+                            customizing the template to fit by business.</p>
+                    </div>
+                    <div class="testimonial-client">
+                        <img src="img/t2.jpg" alt="team">
+                        <div class="testimonial-client-info">
+                            <h5>Penny Tool -
+                                <small>Manager</small>
+                            </h5>
+                            <a href="#" target="_blank">ABC Company</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item single-testimonial pt-50">
+                    <div class="testimonial-intro">
+                        <p>Thanks HtmlLover for a superb template. Flexible, powerful and great
+                            looking. The
+                            support has been wonderful with same day answers to all the questions I
+                            had about
+                            customizing the template to fit by business.</p>
+                    </div>
+                    <div class="testimonial-client">
+                        <img src="img/t3.jpg" alt="team">
+                        <div class="testimonial-client-info">
+                            <h5>Britney Doe -
+                                <small>Developer</small>
+                            </h5>
+                            <a href="#" target="_blank">Cloud IT</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 <!--end testimonial section-->
 
-    <section id="blog" class="blog">
-      
+  <section id="blog" class="blog">
+    <div class="wrapper">
       <div class="works-heading">
         <h6>What I'm thinking'</h6>
         <h2>Blog</h2>
       </div>
-      <div class="">
-        <div class="form-control">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name">
-        </div>
-        <div class="form-control">
-          <label for="email">email</label>
-          <input type="email" name="email" id="email">
-        </div>
+      <h2>Subscribe to get informed when i post a blog</h2>
+      <div class="newsletter">
+        <input type="email" id="border" class="input" placeholder="Enter you email" />
+        <i class="fas sa-envelop"></i>
+        <span class="subs">Subscribe</span>
       </div>
-    </section>
-
-
-    <!-- contact me -->
-    <section class="contactMe">
-      <!-- <img src="./assets/img/cont.jpg" alt=""> -->
-      <div class="form-group">
-        <div class="contact-title">
-          <h6>reach out to me</h6>
-          <h2>Contact Me</h2>
-        </div>
-        <div class="contact-form">
-          <form action="" method="post">
-            <input
-              type="text"
-              class="form-control"
-              required
-              placeholder="your name"
-            /><br />
-            <input
-              type="email"
-              class="form-control"
-              required
-              placeholder="your name"
-            /><br />
-            <textarea
-              name=""
-              id=""
-              cols="50"
-              rows="5"
-              class="form-control"
-              placeholder="enter text"
-              required
-            ></textarea
-            ><br />
-            <input type="submit" value="submit" class="submit" />
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- contact me ends -->
-    <!--start footer top section-->
-    <section class="footer-top-section pt-50 pb-30" id="contact">
-      <div class="footer-top-wrap">
-          <div class="container">
-            
-              <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                      <div class="single-footer-top">
-                          <div class="footer-top-icon">
-                              <i class="fa fa-map-marker"></i>
-                          </div>
-                          <div class="footer-top-text">
-                              <h5>Address</h5>
-                              <p>16122 Collins Street West. <br> Victoria 8007</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-md-6 col-sm-12">
-                      <a href="tel:+2348078372893">
-                        <div class="single-footer-top">
-                          <div class="footer-top-icon">
-                              <i class="fa fa-phone"></i>
-                          </div>
-                          <div class="footer-top-text">
-                              <h5>Call Me</h5>
-                              <p>+234 807 837 2893</p>
-                          </div>
-                        </div>
-                      </a>
-                  </div>
-
-              </div>
-          </div>
-      </div>
+    </div>
   </section>
 
-  
-    <!--start footer section-->
-    <footer class="footer ptb-30">
-      <div class="footer-wrap">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="text-center">
-                          <div class="footer-social">
-                              <ul class="flex space-btw">
-                                  <li><a href="https://wa.me/2348145230338"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
-                                  <li><a href="https://github.com/sdumax"><i class="fa fa-github"></i> GitHub</a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
-                                
-                              </ul>
-                          </div>
-                          <div class="footer-copyright">
-                              <p>&copy; 2020 MTech Inc.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+  <!-- contact me -->
+  <section class="contactMe" id="contact">
+    <!-- <img src="./assets/img/cont.jpg" alt=""> -->
+    <div class="form-group">
+      <div class="contact-title">
+        <h6>reach out to me</h6>
+        <h2>Contact Me</h2>
       </div>
-    </footer>
-    <script src="./assets/js/nav.js"></script>
+      <div class="contact-form">
+        <form action="" method="post">
+          <input
+            type="text"
+            class="form-control"
+            required
+            placeholder="your name"
+          /><br />
+          <input
+            type="email"
+            class="form-control"
+            required
+            placeholder="your name"
+          /><br />
+          <textarea
+            name=""
+            id=""
+            cols="50"
+            rows="5"
+            class="form-control"
+            placeholder="enter text"
+            required
+          ></textarea
+          ><br />
+          <input type="submit" value="submit" class="submit" />
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact me ends -->
+  <!--start footer top section-->
+  <section class="footer-top-section pt-50 pb-30">
+    <div class="footer-top-wrap">
+        <div class="container">
+          
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="single-footer-top">
+                        <div class="footer-top-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="footer-top-text">
+                            <h5>Address</h5>
+                            <p>16122 Collins Street West. <br> Victoria 8007</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <a href="tel:+2348078372893">
+                      <div class="single-footer-top">
+                        <div class="footer-top-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="footer-top-text">
+                            <h5>Call Me</h5>
+                            <p>+234 807 837 2893</p>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!--start footer section-->
+  <footer class="footer ptb-30">
+    <div class="footer-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <div class="footer-social">
+                            <ul class="flex space-btw">
+                                <li><a href="https://wa.me/2348145230338"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+                                <li><a href="https://github.com/sdumax"><i class="fa fa-github"></i> GitHub</a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+                              
+                            </ul>
+                        </div>
+                        <div class="footer-copyright">
+                            <p>&copy; 2020 MTech Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+</div>
     
+    <script src="./assets/js/nav.js"></script>
+    <script>
+      // preloaderJs
+      $(window).on("load", function() {
+        $(".hideIt").fadeIn();
+        $("#preloader").hide();
+      })
+    </script>
   <script src="./assets/js/scroll.js"></script>
   </body>
 </html>
