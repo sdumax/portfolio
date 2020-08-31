@@ -191,20 +191,21 @@
     </div>
   </section>
 
-  <section class="mason">
-    <h1>Responsive Masonry Grid</h1>
-<p>A pure CSS-only responsive masonry.</p>
+  <section class="mason container">
+    
+    <h1>Gallery</h1>
+    <p>Meet my crew.</p>
 <div class="masonry">
   <div class="item">
-    1
+    
     <img src="./assets/img/IMG-20200829-WA0001.jpg">
   </div>
   <div class="item">
-    2
+    
     <img src="./assets/img/IMG-20200829-WA0002.jpg">
   </div>
   <div class="item">
-    3
+    
     <img src="./assets/img/IMG-20200829-WA0004.jpg">
   </div>
   <div class="item">
@@ -212,11 +213,11 @@
     <img src="./assets/img/IMG-20200829-WA0005.jpg">
   </div>
   <div class="item">
-    5
+    
     <img src="./assets/img/IMG-20200829-WA0006.jpg">
   </div>
   <div class="item">
-    6
+    
     <img src="./assets/img/IMG-20200829-WA0009.jpg">
   </div>
   <div class="item">
@@ -408,17 +409,18 @@
 <!--end testimonial section-->
 
   <section id="blog" class="blog">
-    <div class="wrapper">
+    <div class="wrapper container">
       <div class="works-heading">
         <h6>What I'm thinking'</h6>
         <h2>Blog</h2>
       </div>
       <h2>Subscribe to get informed when i post a blog</h2>
       <div class="newsletter">
-        <form name="subscribe" method="POST" data-netlify="true"></form>
-        <input type="email" id="border" class="input" placeholder="Enter you email" />
-        <i class="fas sa-envelop"></i>
-        <span class="subs">Subscribe</span>
+        <form class="centering" name="subscribe" method="POST" data-netlify="true">
+          <input type="email" id="border" class="input" placeholder="Enter you email" required/>
+          <i class="fas sa-envelop"></i>
+          <span class="subs"><input type="submit" value="Subscribe"></span>
+        </form>
       </div>
     </div>
   </section>
@@ -448,10 +450,7 @@
             placeholder="your name"
           /><br />
           <textarea
-            name="message"
-            id=""
-            cols="50"
-            rows="5"
+            name="message" id="" cols="50" rows="5"
             class="form-control"
             placeholder="enter text"
             required
@@ -476,13 +475,13 @@
                         </div>
                         <div class="footer-top-text">
                             <h5>Address</h5>
-                            <p>16122 Collins Street West. <br> Victoria 8007</p>
+                            <p>No. 8 Akpa Emeka Street<br>Kubwa, Abuja</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-sm-12">
-                    <a href="tel:+2348078372893">
+                    <a href="tel:+2348078372893" class="black">
                       <div class="single-footer-top">
                         <div class="footer-top-icon">
                             <i class="fa fa-phone"></i>
@@ -508,7 +507,7 @@
                 <div class="col-md-12">
                     <div class="text-center">
                         <div class="footer-social">
-                            <ul class="flex space-btw">
+                            <ul class="media-link">
                                 <li><a href="https://wa.me/2348145230338"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
                                 <li><a href="https://github.com/sdumax"><i class="fa fa-github"></i> GitHub</a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
