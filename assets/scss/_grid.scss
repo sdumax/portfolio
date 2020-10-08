@@ -1,0 +1,88 @@
+/*===============================================
+                    GRID SYSTEM
+    Authour: Maxwell Diogu
+    Version: v1.0
+    
+    => 12 row grid system
+    => responsive to:
+        -- Small devices
+        -- Tablet size devices at 768px^^ 
+        -- Wide laptop size devices at 1008px^^
+        -- Larger TV size devices at 1300px^^
+    => Usage:    (where i = values from 1 to 12)
+        -- .col-sm-{i}
+        -- .col-md-{i}
+        -- .col-lg-{i}
+        -- .col-xl-{i}
+===============================================*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  &:after .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 1rem;
+  width: 100%;
+  min-height: 1px;
+  display: inline-block;
+}
+
+@media #{$breakpoint-small} {
+  .container {
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .col-sm-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .container {
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .col-md-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}
+
+@media #{$breakpoint-large} {
+  .container {
+    width: 95%;
+    max-width: $grid-max-width;
+
+    @for $i from 1 through $grid-columns {
+      .col-lg-#{$i} {
+        width: 100% / $grid-columns * $i;
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-xl} {
+  .container {
+    width: 95%;
+    max-width: $grid-max-width;
+
+    @for $i from 1 through $grid-columns {
+      .col-xl-#{$i} {
+        width: 100% / $grid-columns * $i;
+      }
+    }
+  }
+}

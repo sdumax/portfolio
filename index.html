@@ -11,15 +11,16 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/nav.css" /> -->
     <title>Maxwell Diogu</title>
   </head>
   <body id="home">
 
-    <!-- -start preloader -->
+    <!-- -start preloader
 <div id="preloader">
     <div id="loader"></div>
-</div>
+</div> -->
  <!-- end preloader -->
 <div class="hideit">
   <nav class="navbar" >
@@ -32,10 +33,30 @@
       <li class="nav-item"><a href="#blog">Blog</a></li>
       <li class="nav-item"><a href="#contact">Contact</a></li>
     </ul>
-    <span class="open-slide">
-      <a href="#" onclick="openMenu()" class="btn menu-btn">Menu</a>
-    </span>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon" id="nav_icon"></span
+      ></label>
   </nav>
+  <div id="side-menu" class="side-navbar">
+    <ul class="side-list" id="side-list">
+      <a href="#" class="side-nav logo"></a>
+
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#works">Portfolio</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <div class="flex-space-btw">
+        <i class="fa fa-whatsapp"></i></a>
+        <i class="fa fa-github"></i></a>
+        <i class="fa fa-linkdin"></i></a>
+        <i class="fa fa-tweeter"></i></a>
+      </div>
+    </ul>
+    
+  </div>
   <header>
     <div class="main">
       <div class="main-content">
@@ -49,17 +70,7 @@
       </div>
     </div>
 
-    <div id="side-menu" class="side-nav">
-      <a href="#" class="btn-close" onclick="closeMenu()">&times;</a>
-      <ul class="">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#works">Portfolio</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    
   </header>
 
   <section id="about" class="aboutMe mb-3 mt-2">
@@ -257,47 +268,70 @@
       <div class="works-section">
         <div class="wev-container">
           <!-- <div class="container mb-4"> -->
-            <div class="wev-card col-sm-12 col-md-6 p-3 mb-2">
-              <div class="wev-card-img">
+            <div class="wev-card col-sm-12 col-md-6 mb-2">
                 <img
                   src="./assets/img/work(1).png"
                   alt="image of sky 360 properties"
                 />
+              
+              <div class="wev-card-content flex-col">
+                <button class="btn py-2">Know More</button>
               </div>
-              <div class="wev-card-content mb-2">
+              <!-- <div class="wev-card-content mb-2">
                 <div class="wev-card-header"></div>
                 <div class="wev-card-body pb-1">
-                  <p >
+                   <p >
                     Search for a property of your choice and click to view the
                     property. Take a Walk-through our detailed 360 virtual tour...
                     <span><a href="https://sky360properties.com" class="btn btn-sec">see more</a></span>
                   </p>
                 </div>
                 <div class="wev-card-footer "></div>
-              </div>
+              </div> -->
             </div>
-          <!-- </div> -->
-          <!-- <div class="container mb-4"> -->
             <div class="wev-card col-sm-12 col-md-6 mb-2">
-              <div class="wev-card-img">
-                <img
-                  src="./assets/img/work(1).png"
-                  alt="image of sky 360 properties"
-                />
-              </div>
-              <div class="wev-card-content">
-                <div class="wev-card-header"></div>
-                <div class="wev-card-body">
-                  <p>
-                    Search for a property of your choice and click to view the
-                    property. Take a Walk-through our detailed 360 virtual tour...
-                    <span><a href="https://sky360properties.com" class="wev-card-link btn btn-sec">see more</a></span>
-                  </p>
-                </div>
-                <div class="wev-card-footer"></div>
-              </div>
+              <img
+                src="./assets/img/work(1).png"
+                alt="image of sky 360 properties"
+              />
+            
+            <div class="wev-card-content flex-col">
+              <button class="btn py-2">Know More</button>
             </div>
-          <!-- </div> -->
+            <!-- <div class="wev-card-content mb-2">
+              <div class="wev-card-header"></div>
+              <div class="wev-card-body pb-1">
+                 <p >
+                  Search for a property of your choice and click to view the
+                  property. Take a Walk-through our detailed 360 virtual tour...
+                  <span><a href="https://sky360properties.com" class="btn btn-sec">see more</a></span>
+                </p>
+              </div>
+              <div class="wev-card-footer "></div>
+            </div> -->
+          </div>
+          <div class="wev-card col-sm-12 col-md-6 mb-2">
+            <img
+              src="./assets/img/work(1).png"
+              alt="image of sky 360 properties"
+            />
+          
+          <div class="wev-card-content flex-col">
+            <button class="btn py-2">Know More</button>
+          </div>
+          <!-- <div class="wev-card-content mb-2">
+            <div class="wev-card-header"></div>
+            <div class="wev-card-body pb-1">
+              <script src="https://cdn.jsdelivr.net/npm/plain-modal@1.0.30/plain-modal.min.js" integrity="sha256-YFHHHHrFmU4gdh7Xok04VpV521zqNH+eXwgeezQ6qLg=" crossorigin="anonymous"></script>
+               <p >
+                Search for a property of your choice and click to view the
+                property. Take a Walk-through our detailed 360 virtual tour...
+                <span><a href="https://sky360properties.com" class="btn btn-sec">see more</a></span>
+              </p>
+            </div>
+            <div class="wev-card-footer "></div>
+          </div> -->
+        </div>
         </div>
       </div>
     </div>
@@ -528,10 +562,10 @@
     <script src="./assets/js/nav.js"></script>
     <script>
       // preloaderJs
-      $(window).on("load", function() {
-        $(".hideIt").fadeIn();
-        $("#preloader").hide();
-      })
+      // $(window).on("load", function() {
+      //   $(".hideIt").fadeIn();
+      //   $("#preloader").hide();
+      // })
     </script>
   <script src="./assets/js/scroll.js"></script>
   </body>

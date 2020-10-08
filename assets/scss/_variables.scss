@@ -1,0 +1,32 @@
+//width
+$max-width: 1024px;
+
+$pad-level: 4;
+
+/*======================
+    COLORS
+======================*/
+
+$white: white;
+$light: #f4f4f4;
+$dark: #212529;
+$black: #111;
+$prime: #0e6cff;
+$sec: #ff8700;
+$grey: #868e96;
+$green: #28a745;
+$d-blue: rgba(0, 123, 255, 0.25);
+$d-green: rgba(40, 167, 69, 0.5);
+
+/* =====================
+    GRID SYSTEM
+===================== */
+
+$grid-columns: 12;
+$grid-max-width: 1200px;
+$breakpoint-small: "only screen and (min-width: 0px)";
+$breakpoint-medium: "only screen and (min-width: 768px)";
+$breakpoint-large: "only screen and (min-width: 1008px)";
+$breakpoint-xl: "only screen and (min-width: 1300px)";
+
+/*===========================================================*/

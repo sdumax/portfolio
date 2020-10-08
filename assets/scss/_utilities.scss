@@ -1,0 +1,102 @@
+/*==============
+  TEXT
+==============*/
+.text-shadow {
+  text-shadow: 1.2px 1.2px 1px rgb(0, 0, 0);
+}
+
+/*=================
+  BUTTONS
+====================*/
+menu-btn {
+  font-size: 4rem;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid #f6f6f6;
+  border-radius: 3px;
+  // background-color: $secondary;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.2);
+  }
+  &.btn-sec {
+    background-color: $sec;
+    border: none;
+  }
+  &.btn-animate {
+    animation: scale 0.5s alternate infinite;
+
+    @keyframes scaleup {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.2);
+        background-color: #ff5733;
+      }
+    }
+  }
+  // &-prime {
+  //   background-color: $sec;
+  // }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  &:after,
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*==================
+    FLEXBOX
+==================*/
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex.centered,
+.flex-col.centered {
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+// .flex-space-btw,
+// .flex-col.space-btw {
+//   display: flex;
+//   justify-content: space-evenly;
+// }
+.underline {
+  text-decoration: underline;
+  color: $prime;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.my-auto {
+  margin: auto 0;
+}

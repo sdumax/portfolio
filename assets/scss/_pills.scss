@@ -1,0 +1,17 @@
+.pill-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+  .pill {
+    display: block;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 0.5rem 1rem;
+    background-color: rgb(241, 102, 102);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+}

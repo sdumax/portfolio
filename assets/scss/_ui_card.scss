@@ -1,0 +1,128 @@
+.wev-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.wev-card {
+  position: relative;
+  max-width: 320px;
+  border: 4px solid white;
+  // width: 300px;
+  height: 100%;
+  padding: 0;
+  // background: #fff;
+  // padding: 1rem;
+  // display: flex;
+  // flex-direction: column;
+  // box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    .wev-card-content {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0.2s;
+      // margin-top: 5px;
+    }
+  }
+
+  img {
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    width: 300px;
+    // height: 100%;
+
+    // padding-right: 1rem;
+    // border-radius: 4px;
+  }
+
+  .wev-card-content {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba($color: $sec, $alpha: 1);
+    border: 5px solid white;
+    // margin-top: 40px;
+    // padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    // visibility: visible;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+
+    button {
+      border: 5px solid transparent;
+      font-weight: normal;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
